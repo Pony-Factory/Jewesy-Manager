@@ -1,3 +1,7 @@
+pony_f_jewesy_core:
+    resource: "@PonyFJewesyCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
