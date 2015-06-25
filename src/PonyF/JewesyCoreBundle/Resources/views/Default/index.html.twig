@@ -1,1 +1,41 @@
-Hello {{ name }}!
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jewesy Manager {% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material-fullpalette.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/ripples.min.class" rel="stylesheet">
+        {% stylesheets '@PonyFJewesyCoreBundle/Resources/public/css/core-default-index.css' %}
+            <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+        {% endstylesheets %}
+		{% block stylesheets %}
+        {% endblock %}
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/ripples.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/material.min.js"></script>
+    </head>
+
+    <body>
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<p class="navbar-text">Jewesy Manager</p>
+			</div>
+		</nav>
+
+    	<div class="container">
+    	<div class="alert alert-danger" role="alert">Site Under Construction</div>
+		</div>
+        
+        {% block body %}{% endblock %}
+
+    	{% block javascripts %}
+   		{% endblock %}
+
+	</body>
+</html>
